@@ -1,12 +1,10 @@
-class Car {
-  name: string;
-  year: string;
-  constructor(name: string, year: string) {
-    this.name = name;
-    this.year = year;
-  }
+// class Car {
+//   constructor(public name: string) {}
 
-  myCar() {
-    console.log(`my car ${this.name} old is ${this.year}`);
-  }
-}
+//   myCar() {
+//     console.log(`my car ${this.name} old is ${this.name}`);
+//   }
+// }
+
+// const myCar = new Car("BMW");
+// myCar.myCar();
