@@ -45,7 +45,27 @@ class Cat extends Animal {
   constructor(public name: string, public species: string) {
     super(name, species);
   }
-  makeDogSound() {
+  makeCatSound() {
     console.log(`this ${this.name} sound ${this.species}`);
   }
 }
+function isDog(animal: Animal): animal is Dog {
+  return animal instanceof Dog;
+}
+function isCat(animal: Animal): animal is Cat {
+  return animal instanceof Cat;
+}
+function getAnimal(animal: Animal) {
+  if (isDog(animal)) {
+    animal.makeDogSound();
+  } else if (isCat(animal)) {
+    animal.makeCatSound();
+  } else {
+    animal.makeSound();
+  }
+}
+const animan1 = new Dog("Dogy", "german");
+const animan2 = new Cat("Bul", "Brazil");
+
+getAnimal(animan1);
+getAnimal(animan2);
