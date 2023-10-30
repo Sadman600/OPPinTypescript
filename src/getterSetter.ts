@@ -18,3 +18,4 @@ class BankAccount {
 const myAcc = new BankAccount("444", "jhon", 555);
 myAcc.getBlance;
 myAcc.setBlance = 55;
+myAcc.setBlance = 66;
